@@ -2,7 +2,7 @@
 {% extends 'goodmenubase.html' %}
 
 {% block contents %}
-
+<h1 style="display: none">{{usermenu.update_counter}}</h1>
 <div class="d-flex flex-column flex-md-row align-items-center pt-5 px-md-4 bg-white">
     <h1 class="my-0 mr-md-auto font-weight-normal"><strong>{{usermenu.title}}<img src="{{ object.userstar.img.url }}"></strong></h1>
     <p>

@@ -21,7 +21,11 @@ class UserAlbumList(ListView):
     model = UserAlbum
     menu_model = UserMenu
 
- 
+class UserAlbumList2(ListView):
+    model = UserAlbum
+    menu_model = UserMenu
+    template_name = 'usermenu/usermenu_list_date.html'
+
 
 class UserAlbumDetail(DetailView):
     model = UserAlbum

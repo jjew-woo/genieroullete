@@ -8,7 +8,7 @@ app_name = 'usermenu'
 
 urlpatterns = [
     path('',UserAlbumList.as_view(), name='index'),
-    path('date/',UserAlbumList.as_view(), name='date'),
+    path('date/',UserAlbumList2.as_view(), name='date'),
     path("create/", UserMenuCreate.as_view(), name='create'),
     path("delete/<int:pk>/", UserMenuDelete.as_view(), name='delete'),
     path("update/<int:pk>/", UserMenuUpdate.as_view(), name='update'),

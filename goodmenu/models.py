@@ -40,7 +40,6 @@ class Goodmenu(models.Model):
     title = models.CharField(max_length=50)
     smallbody = models.CharField(max_length=500,null=True)
     body = models.TextField(null=True)
-    smallimg = ThumbnailImageField(upload_to='goodmenu/%Y/%m')
     url = models.URLField('url',null=True)
     phone = models.CharField(max_length=20,null=True)
     menulist = models.TextField(null=True)
@@ -49,6 +48,7 @@ class Goodmenu(models.Model):
     close_time = models.DateTimeField()
     mapleft = models.FloatField(null=True)
     mapright = models.FloatField(null=True)
+    smallimg = ThumbnailImageField(upload_to='goodmenu/%Y/%m',null=True)
 
     like = models.ManyToManyField(User, related_name='goodmenulike_post', blank=True)
     favorite = models.ManyToManyField(User, related_name='goodmenufavorite_post', blank=True)

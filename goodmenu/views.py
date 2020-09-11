@@ -24,6 +24,7 @@ class AlbumList(ListView):
 class AlbumDetail(DetailView):
     model = Album
 
+
 class GoodmenuDetail(DetailView):
     model = Goodmenu
 
